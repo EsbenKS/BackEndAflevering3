@@ -1,0 +1,71 @@
+﻿@model AfleveringUge8.Models.Translation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Translation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Danish" class="control-label"></label>
+                <input asp-for="Danish" class="form-control" />
+                <span asp-validation-for="Danish" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Swedish" class="control-label"></label>
+                <input asp-for="Swedish" class="form-control" />
+                <span asp-validation-for="Swedish" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Norwegian" class="control-label"></label>
+                <input asp-for="Norwegian" class="form-control" />
+                <span asp-validation-for="Norwegian" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="English" class="control-label"></label>
+                <input asp-for="English" class="form-control" />
+                <span asp-validation-for="English" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="German" class="control-label"></label>
+                <input asp-for="German" class="form-control" />
+                <span asp-validation-for="German" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spanish" class="control-label"></label>
+                <input asp-for="Spanish" class="form-control" />
+                <span asp-validation-for="Spanish" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Italian" class="control-label"></label>
+                <input asp-for="Italian" class="form-control" />
+                <span asp-validation-for="Italian" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Croatian" class="control-label"></label>
+                <input asp-for="Croatian" class="form-control" />
+                <span asp-validation-for="Croatian" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+          
+                
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+    <a asp-action="Translate">Translate</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
