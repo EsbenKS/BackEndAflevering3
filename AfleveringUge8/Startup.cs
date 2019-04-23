@@ -54,8 +54,7 @@ namespace AfleveringUge8
                 options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             })
                 .AddFacebook(options => {
-                    options.AppId = "392039218049022";
-                    options.AppSecret = "6131276ebc4ae40f6f33f68c1bee5819";
+                    // INDSÆTTES HER
 
                 })
                 .AddCookie();
