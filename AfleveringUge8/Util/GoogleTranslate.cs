@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 using System.Web;
-using Google.Cloud.Translation.V2;
 
 
 namespace AfleveringUge8.Util
@@ -15,8 +10,9 @@ namespace AfleveringUge8.Util
         public string TranslateText(string input, string targetLanguage)
 
         {
+            // dot not make too many request or it will time out. 
             var toLanguage = targetLanguage;
-            var fromLanguage = "da";//danish (Could have been a parm....  
+            var fromLanguage = "da";//danish
             var url = $"https://translate.googleapis.com/translate_a/single?client=gtx&sl={fromLanguage}&tl={toLanguage}&dt=t&q={HttpUtility.UrlEncode(input)}";
             var webClient = new WebClient
             {
