@@ -65,7 +65,7 @@ namespace AfleveringUge8.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("TranslationID,Danish,Swedish,Norwegian,English,German,Spanish,Italian,Croatian")] Translation translation)
         {
-            var googleTranslate2 = new GoogleTranslate2();
+           
 
             var googleTranslate = new GoogleTranslate();
          
