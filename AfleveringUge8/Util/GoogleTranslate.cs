@@ -12,7 +12,7 @@ namespace AfleveringUge8.Util
         {
             // dot not make too many request or it will time out. 
             var toLanguage = targetLanguage;
-            var fromLanguage = "da";//danish
+            var fromLanguage = "da";//dansk
             var url = $"https://translate.googleapis.com/translate_a/single?client=gtx&sl={fromLanguage}&tl={toLanguage}&dt=t&q={HttpUtility.UrlEncode(input)}";
             var webClient = new WebClient
             {
